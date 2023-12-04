@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!--Turma: 3C -->
+<!--Participantes: Luan Moura, Gabriel da Silva, Barbara Lopes, Beatriz, Lucas Menezes,
+Anna Gabriela, Franciane e Eduardo Henrique -->
+
+
+
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Passarinhos</title>
+
+    <style>
+
+         .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+
+        .navbar-nav .nav-link.pagina-inicial,
+        .navbar-nav .nav-link.beija-flor {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link.pagina-inicial:hover,
+        .navbar-nav .nav-link.beija-flor:hover {
+            color: #2196F3;
+        }
+
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h2, h4 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+       footer {
+    background-color: #333;
+    color: white;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+    .navbar-nav .nav-link:hover {
+        color: #2196F3 !important;
+    }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand">Passarinhos</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('inicio') }}">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('formulario') }}">Beija-Flor</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- Benefícios dos Pássaros -->
+    <div class="col-11 m-auto">
+        <hr>
+        <h2>Benefícios dos Pássaros no Dia-a-Dia</h2>
+        <p>
+            Há alguns anos, o autor americano Richard Louv, evidenciou em seu livro “A última criança na natureza”,
+            e propagou o termo “déficit de natureza”. O termo fala sobre um conjunto de problemas físicos e intelectuais que
+            aparecem em consequência de uma vida longe de experiências com o meio ambiente. De acordo com sua pesquisa,
+            crianças que mantêm contato com o mundo natural são mais felizes, saudáveis, desenvolvem mais nos estudos e
+            têm menos distúrbios de atenção.
+            <br>
+            <strong>Fonte:</strong> <a
+                href="https://www.agazeta.com.br/especial-publicitario/leonardodavinci/contato-com-a-natureza-na-escola-contribui-para-educacao-dos-alunos-1020">A
+                última criança na natureza</a>
+        </p>
+        <p>
+            De acordo com a Universidade de Exeter, Inglaterra, atividades na natureza, como observar pássaros,
+            passear num parque, caminhar entre as árvores, influenciam a saúde mental do ser humano. Estudos feitos em
+            2017 comprovam que pessoas que vivem em lugares arborizados e com mais aves perto, são menos inclinadas a
+            terem depressão, crises de ansiedade e estresse. De acordo com a pesquisadora do Butantan, Erika Hingst-Zaher,
+            a desconexão com a natureza e o aumento de sedentarismo causados pela crescente urbanização têm criado preocupações
+            enormes  e pouco discutidas na área de saúde. A pesquisa também revelou que os níveis mais baixos de depressão, ansiedade
+            e estresse estavam associados com a quantidade de aves vistos no período da tarde.
+            <br>
+            <strong>Fonte:</strong> <a
+                href="https://portalesafaz.sefaz.pe.gov.br/midias/saude/958-ansiedade-e-depressao-podem-ser-combatidas-com-observacao-de-aves">Observação
+                de aves e saúde mental</a>
+        </p>
+        <hr>
+    </div>
+
+    <!-- Pássaros na Horta e na Natureza -->
+    <div class="col-11 m-auto">
+        <hr>
+        <h2>Como os Pássaros Podem Ajudar na Horta e na Natureza?</h2>
+        <h4>Controle de Pragas</h4>
+        <p>
+            Aves são excelentes no controle biológico de pragas que atacam as plantações, controlando a população
+            de diversos insetos que podem colocar em risco a produtividade agrícola. Estima-se que as aves ingerem entre
+            400 a 500 milhões de toneladas de insetos por ano.Diversas espécies de aves podem ser citadas como importantes
+            no controle da população de uma variedade de insetos que são prejudiciais às culturas. Codornas, andorinhas, papa-moscas
+            e diversas outras aves todos os dias cobrem grandes extensões de terras e alimentam-se de uma infinidade de insetos, tais como besouros,
+            lagartas,etc., protegendo as plantações contra o ataque de insetos.
+        <p>
+            Os pássaros podem ainda ser excelentes controladores naturais de plantas daninhas ou invasoras que aparecem
+            em pomares, hortas e jardins, uma vez que estes animais alimentam-se das sementes de diversas plantas, tais como,
+            tiririca, vassourinha e capins diversos, ajudando no seu controle e diminuindo a infestação.
+        </p>
+        </p>
+
+        <h4>Polinização de plantas</h4>
+        <p>
+            Não é somente as abelhas e borboletas que desempenham um importante papel ecológico quando o assunto
+            é polinização de plantas. As aves também fazem muito bem este serviço ambiental. Estima-se que mundialmente
+            mais de 600 espécies de aves tenham como dieta alimentar o néctar, colhido quando esses animais introduzem
+            o bico nas flores de uma variedade de espécies de plantas.
+        </p>
+        <p>
+            Ao aproximar-se das flores das plantas essas aves introduzem seu bico na flor para sugar o néctar, ficando
+            o bico e diferentes partes do corpo do animal cobertas de pólen que, posteriormente, entrará em contato com
+            o aparelho reprodutor de uma nova flor ao ser visitada pela ave.
+        </p>
+        <p>
+            A polinização realizada pelas aves é um processo tão importante que beneficia diretamente o homem. Estima-se que
+            5% das plantas utilizadas pelo homem em sua alimentação ou como remédio são polinizadas por aves durante seu
+            ciclo de vida. O desaparecimento das aves tem como consequência direta a interrupção desse importante serviço
+            ecossistêmico, levando inúmeras espécies de plantas também à extinção, fato este já observado na natureza.
+        </p>
+
+        <h4>Limpam a natureza</h4>
+        <p>
+            Quando o assunto é limpeza da natureza algumas aves são inegavelmente excelentes catadoras de “lixo” no meio
+            ambiente. Dentre elas os urubus, gaviões e abutres ao alimentarem de animais mortos promovem a limpeza do ambiente
+            e evitam que doenças como a raiva, a tuberculose, dentre outras se desenvolvam e espalhem, atingindo o homem ou outros
+            animais
+        </p>
+
+        <h4>Dispersam sementes </h4>
+        <p>
+            A dispersão de sementes é um processo fundamental para manter e ampliar as florestas em várias partes da terra.
+            E nesse processo as aves também possuem sua parcela de contribuição, uma vez que as aves são excelentes
+            dispersores de sementes das mais variadas espécies de árvores. Os pássaros ajudam a repovoar ambientes degradados,
+            introduzindo nesses espaços diversas sementes de plantas arbóreas, principalmente espécies frutíferas,
+            que formarão uma nova floresta.
+        </p>
+        <p>
+            Diversas espécies de aves contribuem sistematicamente na prestação desse serviço ambiental. Tucanos, sanhaços,
+            periquitos, sabiás, papagaios, araras, pipiras, gaturamos, jacus e a gralha-azul são exemplos dessas aves
+            plantadoras de florestas. Ao ingerir as sementes esses animais acabam defecando-as ou regurgitando-as em
+            diferentes partes da floresta ou áreas degradadas, que posteriormente irão germinar, mantendo a floresta de pé
+            ou restaurando ambientes degradados.
+
+            <br>
+            <strong>Fonte:</strong> <a
+                href="https://www.naturezaeconservacao.eco.br/2020/02/descubra-6-motivos-pelos-quais.html">6 motivos pelos quais precisamos das aves</a>
+        </p>
+
+
+        <hr>
+    </div>
+
+    <!-- Alimentador e Bebedouro de Pássaros -->
+    <div class="col-11 m-auto">
+        <hr>
+        <h2>Qual a Função de Ter um Alimentador e um Bebedouro de Pássaros?</h2>
+        <h4>Comedouros</h4>
+        <p>
+           Oferecer alimento é uma das maneiras mais simples de trazer as aves para perto de nós. Comedouros e bebedouros
+            podem representar um recurso extra importante para as aves urbanas, principalmente durante períodos de escassez
+            de alimento, como no inverno. Além disso, disponibilizar água limpa, numa tigelinha rasa, pode ajudar muito
+            algumas espécies durante os períodos de estiagem.
+
+            Dependendo de onde você mora, pode demorar um pouco até as aves descobrirem um novo comedouro na área. Já os
+            bebedouros com água e açúcar geralmente são encontrados rapidamente pelos beija-flores, às vezes em questão
+            de minutos!
+
+        </p>
+        <p>
+            Frutas como mamão,banana e abacate atraem diversas espécies de pássaros.Manter um comedouro exige alguns cuidados
+            diários. O alimento oferecido deve estar sempre fresco e seco. O comedouro deve ser higienizado com frequência,
+            com água sanitária. Após a limpeza, enxaguar com bastante água. Isso diminui o risco de que doenças sejam
+            transmitidas de uma ave para a outra, o que pode ser um problema sério em comedouros visitados por muitas aves.
+            Também não é preciso exagerar na quantidade de alimento oferecido. O comedouro é apenas um complemento na dieta
+            das aves, que devem continuar procurando outros alimentos por conta própria.
+        </p>
+        <p>
+            Os comedouros podem ser de plástico, madeira, cerâmica, metal… Madeira tem uma vida útil pequena e é mais
+            difícil de higienizar, se possível opte por um comedouro produzido com outro material. Ao instalar um comedouro,
+            prefira um local sombreado (principalmente no caso de frutas, que estragam rápido ou desidratam sob o sol) e
+            protegido da chuva.
+        </p>
+
+        <p>
+            A oferta de água pode atrair algumas espécies de aves que não costumam se interessar por comedouros: corruíras,
+            chupins, suiriris… Sem contar todas as outras! Qualquer pratinho ou tigela rasa serve, mas os cuidados são os
+            mesmos que devemos ter com um comedouro: oferecer água limpa e fresca, higienizar o recipiente diariamente e
+            tomar cuidado com gatos e outros predadores. Aqui a higienização é importante tanto para a saúde dos passarinhos
+            como para evitar a proliferação de mosquitos transmissores da dengue.
+        </p>
+
+        <h4>Bebedouro</h4>
+        <p>
+            Bebedouros para beija-flor são um dos assuntos mais polêmicos quando se fala em oferecer alimentos para
+            aves. Há um mito muito difundido de que eles causariam candidíase nos beija-flores. Mas não há nenhuma
+            evidência científica de que isso seja verdade. Pode sim dar água com açúcar. Na proporção de 20%, ou seja,
+            1 parte de açúcar para 4 partes de água. Aliás, tem que ser açúcar mesmo, daquele refinado ou tipo cristal.
+            Açúcar demerara e açúcar mascavo contêm grandes quantidades de ferro, que é tóxico para os beija-flores.
+            Mel também nunca deve ser utilizado. Não há nenhuma necessidade de utilizar aqueles produtos coloridos
+            industrializados, ditos “néctar para beija-flores”, que são vendidos em pet shops. Esses produtos contêm
+            corantes e outras substâncias sintéticas que não são necessárias para a nutrição dos beija-flores.
+        </p>
+        <p>
+            O que é importante de verdade é fazer a higienização diária dos bebedouros. Fungos e bactérias que
+            proliferam ali podem sim causar doenças nas aves. Preferencialmente, troque a água com açúcar todos os dias
+            e aproveite para lavar bem o bebedouro, inclusive os buraquinhos onde os beija-flores enfiam o bico.
+            De vez em quando é bom colocar o bebedouro de molho por uma horinha em água sanitária, e depois enxaguar
+            bem com água.
+            O bebedouro deve ser colocado preferencialmente na sombra, pois em temperaturas mais altas a água com
+            açúcar fermenta rapidamente. Existem vários modelos de bebedouros à venda, de diferentes tamanhos e cores,
+            com e sem poleiros. Beija-flores pairam no ar e não precisam de poleiros, mas outras aves que também visitam
+            bebedouros podem utilizá-los.
+
+        </p>
+        <p>
+            Flores de plástico vermelho chamam mais a atenção dos beija-flores, mas depois que eles estão acostumados
+            a visitar um bebedouro, elas não são mais necessárias. Você pode descartar as pétalas de plástico, o que
+            facilita a limpeza e ajuda a evitar abelhas. Nunca utilize nenhum tipo de inseticida para afastar formigas,
+            abelhas ou outros insetos dos bebedouros, pois essas substâncias podem contaminar as aves.
+
+            <br>
+            <strong>Fonte:</strong> <a
+                href="https://apassarinhologa.com.br/comedouros-e-bebedouros/">Comedouros e Bebedouros</a>
+        </p>
+
+        <hr>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contato</h5>
+                    <p>Email: contato@escola.com</p>
+                    <p>Telefone: (123) 456-7890</p>
+                    <div>
+                        <a href="https://cemicruzeiro.se.df.gov.br/">cemicruzeiro.se.df.gov.br</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                                        <h5>Redes Sociais</h5>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/c/CanaldoCEMIC"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com/cemicruzeiro?igshid=MzRlODBiNWFlZA=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+

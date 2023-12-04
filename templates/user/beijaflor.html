@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!--Turma: 3C -->
+<!--Participantes: Luan Moura, Gabriel da Silva, Barbara Lopes, Beatriz, Lucas Menezes,
+Anna Gabriela, Franciane e Eduardo Henrique -->
+
+
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Passarinhos</title>
+
+  <style>
+
+         .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+
+        .navbar-nav .nav-link.pagina-inicial,
+        .navbar-nav .nav-link.beija-flor {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link.pagina-inicial:hover,
+        .navbar-nav .nav-link.beija-flor:hover {
+            color: #2196F3;
+        }
+
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h2, h4 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+       footer {
+    background-color: #333;
+    color: white;
+        }
+
+        footer p {
+            color: #fff;
+        }
+.navbar-nav .nav-link:hover {
+        color: #2196F3 !important;
+    }
+
+  </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand">Passarinhos</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('inicio') }}">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('formulario') }}">Beija-Flor</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+  <!-- Beija-flores Section -->
+<div class="col-11 m-auto">
+    <hr>
+    <h2>Beija-flores</h2>
+    <h3>Características</h3>
+    <p>
+        Os beija-flores apresentam bico longo e tubular, medindo cerca de 16 centímetros. Podem voar em ponto fixo,
+        pairando no ar, e alimentam-se de néctar de flores e pequenos animais. Destacam-se pela habilidade única de voar
+        para trás e realizar diversos malabarismos durante o voo. Durante o voo, são capazes de bater suas asas por até
+        90 vezes por segundo.
+    </p>
+    <p>
+        Suas asas são muito velozes, batendo mais de 80 vezes por segundo, nenhuma outra espécie se aproxima dessa
+        quantidade de batimentos. Outra característica marcante é a capacidade de ficar suspenso no ar e permanecer
+        imóvel.
+    </p>
+
+    <h3>Alimentação</h3>
+    <p>
+        Os beija-flores podem empoleirar, mas não conseguem andar. Sua dieta principal é composta pelo néctar das
+        flores. A ave possui bico e língua longos adaptados para coletar o néctar e complementa a dieta com moscas,
+        aranhas e formigas.
+    </p>
+
+    <h3>Bebedouro do Beija-flor</h3>
+    <p>
+        <strong>DIY Bebedouro caseiro para Beija-flor:</strong> Assista ao vídeo tutorial <a
+            href="https://youtu.be/AIZUTas9vCM?si=5WYW1cm1dYK2xCfv" target="_blank">aqui</a>.
+    </p>
+
+    <h3>O que Colocar no Alimentador de Beija-flor?</h3>
+    <p>
+        Dilua em um copo três colheres rasas de açúcar para 450 ml de água filtrada. Ou então, se preferirem, pode ser
+        diluído na água um néctar próprio para o beija-flor encontrado em casas de rações. Misture bem a solução e
+        depois despeje no bebedouro.
+    </p>
+
+    <h3>Como Atrair o Beija-flor para o Bebedouro?</h3>
+    <p>
+        Coloque um laço vermelho em volta do bebedouro se nenhum beija-flor está aparecendo. Esses pássaros são atraídos
+        pela cor vermelha, além de gostarem também de cores vibrantes.
+    </p>
+
+    <hr>
+</div>
+
+      <!-- Rodapé -->
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contato</h5>
+                    <p>Email: contato@escola.com</p>
+                    <p>Telefone: (123) 456-7890</p>
+                    <div>
+                        <a href="https://cemicruzeiro.se.df.gov.br/">cemicruzeiro.se.df.gov.br</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                                        <h5>Redes Sociais</h5>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/c/CanaldoCEMIC"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com/cemicruzeiro?igshid=MzRlODBiNWFlZA=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
